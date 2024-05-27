@@ -1,0 +1,76 @@
+#####################
+# 2019-11-18
+# Model of the Colombia Energy System in 2030
+# Developed by Santiago Bernal del Río
+# Politecnico di Milano - Department of Energy
+#####################
+
+
+
+
+# Model configuration: all settings that affect the built model
+
+########################################################################
+#                              IMPORTS                                 #
+# All the files that define the model configuration should be imported #
+########################################################################
+
+import: 
+########################################################################
+#############################   Baseline2030  ##############################
+########################################################################
+
+
+    - 'Model_config/NodoGuajira_CO2TAXES/Location_Constraints_NODOGUAJIRA.yaml'
+    - 'Model_config/NodoGuajira_CO2TAXES/Transmission_links_NODOGUAJIRA.yaml'
+    - 'Model_config/NodoGuajira_CO2TAXES/Technologies_NODOGUAJIRA.yaml'
+
+
+########################################################################
+#######################   Scenarios 2030  ##############################
+########################################################################
+
+
+#    - 'Model_config/Scenarios2030/Location_Constraints_NODOGUAJIRA.yaml'
+#    - 'Model_config/Scenarios2030/Transmission_links_NODOGUAJIRA.yaml'
+#    - 'Model_config/Scenarios2030/Technologies_NODOGUAJIRA.yaml'
+
+#
+########################################################################
+#                                MODEL                                 #
+#                      General settings of the model                   #
+########################################################################
+
+model:
+
+    name: 'Colombia Model'           # Defining the name of the model
+    calliope_version: 0.6.9                      # What version of Calliope this model is intended for
+    time:
+        function: resample
+        function_options: { 'resolution': '1H' }
+    timeseries_data_path: 'Time_series_data/Scenarios'     # Time series data path
+    timeseries_dateformat: '%Y-%m-%d %H:%M:%S'
+    subset_time: ['2030-01-01', '2030-12-30']    # shows the a subset of time to represent the results
+
+
+########################################################################
+#                                RUN                                   #
+#          All settings that affect how the built model is run         #
+########################################################################
+
+run:
+    operation:
+        horizon: 48
+        window: 24
+        ####################################
+        #        Defining the solver       #
+        #         glpk: free solver        #             
+        ####################################
+    solver: gurobi
+#    cyclic_storage: false
+    ensure_feasibility: true  # Switches on the "unmet demand" constraint
+    bigM: 1e9                  # Sets the scale of unmet demand, which cannot be too high,
+
+    zero_threshold: 1e-10      # Any value coming out of the backend that is smaller than this, will be set to zero
+    mode: plan  # Choices: plan, operate
+    objective_options: { 'cost_class': { 'monetary': 1 }}

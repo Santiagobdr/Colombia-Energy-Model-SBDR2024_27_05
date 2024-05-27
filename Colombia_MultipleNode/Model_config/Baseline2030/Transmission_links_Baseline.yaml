@@ -1,0 +1,345 @@
+
+# Transmission Grid and the connections Definition #
+
+# Parameters and Units:
+
+    # energy_cap_equals:  Capacity of Grid          [kW]
+    # distance:           Distance Between 2 Nodes  [hundreds of km]   
+
+techs:
+
+############################### High Voltage(230) Grid ###############################
+    hvdc_230:
+        essentials:
+            name: 'High Voltage Grid_230'
+            parent: transmission
+            carrier: power
+            color: '#d913a6'
+        constraints:
+            energy_eff_per_distance: 0.995
+        costs:
+            monetary:
+                om_prod: 0.0076
+                
+############################### High Voltage(500) Grid ###############################
+    hvdc_500:
+        essentials:
+            name: 'High Voltage Grid_500'
+            parent: transmission
+            carrier: power
+            color: '#13020e'
+        constraints:
+            energy_eff_per_distance: 0.995
+        costs:
+            monetary:
+                om_prod: 0.0076
+
+              
+                
+links:                             
+                
+# Connection of Nodes
+# As the country is divided into 18 regions, the distance and capacity between two nodes could be different in different directions
+# due to the fact that there are different counties are located in every region and not all of them are connected
+# As a result, an average capacity and distance is considered for the connection of every two nodes.
+
+    #1	SubAntioquia
+    #2	SubArauca
+    #3	SubAtlantico
+    #4	SubBogota
+    #5	SubBolivar
+    #6	SubBoyaca-Casanare
+    #7	SubCaqueta
+    #8	SubCauca-Narinno
+    #9	SubCerromatoso
+    #10	SubCordoba-Sucre
+    #11	SubCQR
+    #12	SubGCM
+    #13	SubHuila-Tolima
+    #14	SubMeta
+    #15	SubNorteSantander
+    #16	SubPutumayo
+    #17	SubSantander
+    #18	SubValle
+
+################################################################ Antioquia #####################################################################
+    SubAntioquia,SubBogota:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 665000
+                distance: 5.273
+
+                             
+            hvdc_500:
+                constraints:
+                    energy_cap_equals: 1485000
+                distance: 2.637
+
+    SubAntioquia,SubCQR:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 2029000
+                distance: 7.729
+
+            hvdc_500:
+                constraints:
+                    energy_cap_equals: 3414000
+                distance: 2.576
+
+    SubAntioquia,SubCerromatoso:
+        techs:
+            hvdc_500:
+                constraints:
+                    energy_cap_equals: 7144000
+                distance: 5.609
+
+    SubAntioquia,SubSantander:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 891000
+                distance: 7.457
+
+            hvdc_500:
+                constraints:
+                    energy_cap_equals: 3340000
+                distance: 4.971
+
+
+################################################################ Atlantico #####################################################################
+    SubAtlantico,SubBolivar:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 751000
+                distance: 3.011
+
+            hvdc_500:
+                constraints:
+                    energy_cap_equals: 3804000
+                distance: 1.004
+
+
+    SubAtlantico,SubGCM:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 849000
+                distance: 5.324
+
+
+
+################################################################ Bogota #####################################################################
+
+    SubBogota,SubMeta:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 1023000
+                distance: 6.351
+
+    SubBogota,SubBoyaca-Casanare:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 658000
+                distance: 3.407
+
+    SubBogota,SubCQR:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 653000
+                distance: 2.473
+
+            hvdc_500:
+                constraints:
+                    energy_cap_equals: 1485000
+                distance: 1.237
+
+    SubBogota,SubHuila-Tolima:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 658000
+                distance: 4.977
+
+
+################################################################ Bolivar #####################################################################
+
+    SubBolivar,SubCordoba-Sucre:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 205000
+                distance: 2.294
+
+################################################################ Caqueta #####################################################################
+
+    SubCaqueta,SubPutumayo:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 373000
+                distance: 2.248
+
+################################################################ Cauca-Narino #####################################################################
+
+    SubCauca-Narinno,SubCaqueta:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 373000
+                distance: 3.696
+
+    SubCauca-Narinno,SubPutumayo:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 373000
+                distance: 2.394
+
+################################################################ Caldas-Quindio-Risaralda #####################################################################
+
+    SubCQR,SubValle:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 1154000
+                distance: 7.277
+
+            hvdc_500:
+                constraints:
+                    energy_cap_equals: 1559000
+                distance: 1.819
+
+
+################################################################ CerroMatoso #####################################################################
+
+    SubCerromatoso,SubCordoba-Sucre:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 360000
+                distance: 0.467
+
+
+            hvdc_500:
+                constraints:
+                    energy_cap_equals: 5753000
+                distance: 1.401
+
+################################################################ Cordoba-Sucre #####################################################################
+
+    SubCordoba-Sucre,SubAtlantico:
+        techs:
+            hvdc_500:
+                constraints:
+                    energy_cap_equals: 3800000
+                distance: 6.135
+
+
+    SubCordoba-Sucre,SubGCM:
+        techs:
+            hvdc_500:
+                constraints:
+                    energy_cap_equals: 1485000
+                distance: 3.538
+
+################################################################ Guajira-Cordoba-Magdalena #####################################################################
+
+    SubGCM,SubBolivar:
+        techs:
+            hvdc_500:
+                constraints:
+                    energy_cap_equals: 1485000
+                distance: 2.475
+
+################################################################ Huila-Tolima #####################################################################
+
+    SubHuila-Tolima,SubCaqueta:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 373000
+                distance: 3.853
+
+    SubHuila-Tolima,SubCauca-Narinno:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 274500
+                distance: 7.243
+
+################################################################ NortedeSantander #####################################################################
+
+    SubNorteSantander,SubGCM:
+        techs:
+            hvdc_500:
+                constraints:
+                    energy_cap_equals: 1485000
+                distance: 2.735
+
+
+    SubNorteSantander,SubSantander:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 923000
+                distance: 4.137
+
+################################################################ Santander #####################################################################
+
+#    SubSantander,SubGCM:
+#        techs:
+#            hvdc_500:
+#                constraints:
+#                    energy_cap_equals: 1485000
+#                distance: 0.825
+# AUN NO EXISTE
+
+    SubSantander,SubArauca:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 274000
+                distance: 2.953
+
+
+
+    SubSantander,SubBoyaca-Casanare:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 628000
+                distance: 3.433
+
+
+################################################################ Valle #####################################################################
+
+    SubValle,SubCauca-Narinno:
+        techs:
+            hvdc_230:
+                constraints:
+                    energy_cap_equals: 688000
+                distance: 2.858
+
+
+#    SubPutumayo, Export:
+#        techs:
+#            hvdc_230:
+#                constraints:
+#                    energy_cap_equals: 688000
+#                    one_way: False
+#                distance: 0.234
+
+
+
+#    Imports, SubValle:
+#        techs:
+#            hvdc_230:
+#                constraints:
+#                    energy_cap_equals: 688000
+#                distance: 2.858

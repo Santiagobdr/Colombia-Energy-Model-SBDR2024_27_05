@@ -1,0 +1,1363 @@
+
+# Technology Definition #
+
+# Parameters and Units:
+
+    # resource:      limitation over the power output
+    # resource_unit: Defines the unit of numbers provided in resource
+    # energy_eff:    efficiency of power plant             [-]
+    # lifetime:      Life time of the power plant          [year]
+    # energy_cap:    Capital investment of the technology  [$/kW]
+    # om_annual:     Fixed annual O&M cost                 [$/kW]
+    # om_prod:       Variable cost of production           [$/kWh]
+    # om_con:        Variable cost of fuel                 [$/kWh]
+    # energy_cap:    Investment Cost of Technology         [$/kW]
+    # lifetime:      Life time of the Technology           [years]
+    # interest_rate: Interest rate                         [-]
+   
+# Reference: Updated Least Cost Power Development Plan 2017-2035 Report
+
+
+techs:
+
+    L_hydro_pp_General:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+##
+
+
+############################### Large Hydro Power Plants Miel ###############################
+
+    L_hydro_pp_Miel:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Miel'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+############################### Large Hydro Power Plants Guatron ###############################
+
+    L_hydro_pp_Guatron:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Guatron'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+############################### Large Hydro Power Plants Guatapé ###############################
+
+    L_hydro_pp_Guatape:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Guatapé'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants Playas ###############################
+
+    L_hydro_pp_Playas:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Playas'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+############################### Large Hydro Power Plants Porce II ###############################
+
+    L_hydro_pp_PorceII:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Porce II'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants PorceIII ###############################
+
+    L_hydro_pp_PorceIII:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant PorceIII'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants San Carlos ###############################
+
+    L_hydro_pp_SanCarlos:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant San Carlos'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants La Tasajera ###############################
+
+    L_hydro_pp_LaTasajera:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant La Tasajera'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants Jaguas ###############################
+
+    L_hydro_pp_Jaguas:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Jaguas'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants Guatrón ###############################
+
+    L_hydro_pp_Guatron2:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Guatrón 2'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants Urra ###############################
+
+    L_hydro_pp_Urra:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Urra'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants Pagua ###############################
+
+    L_hydro_pp_Pagua:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Pagua'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants Betania ###############################
+
+    L_hydro_pp_Betania:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Betania'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants El Quimbo ###############################
+
+    L_hydro_pp_ElQuimbo:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant El Quimbo'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants El Pagua ###############################
+
+    L_hydro_pp_Pagua2:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Pagua 2'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants El Prado ###############################
+
+    L_hydro_pp_Prado:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Prado'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+
+############################### Large Hydro Power Plants Sogamosos ###############################
+
+    L_hydro_pp_Sogamosos:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Sogamosos'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants Pagua 3###############################
+
+    L_hydro_pp_Pagua3:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Pagua 3'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants Chivor ###############################
+
+    L_hydro_pp_Chivor:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Chivor'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants Guavio ###############################
+
+    L_hydro_pp_Guavio:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Guavio'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants Albán ###############################
+
+    L_hydro_pp_Alban:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Albán'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+
+############################### Large Hydro Power Plants Calima ###############################
+
+    L_hydro_pp_Calima:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Calima'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Large Hydro Power Plants Salvajina ###############################
+
+    L_hydro_pp_Salvajina:
+
+        essentials:
+            color: '#2980B9'
+            name: 'Large Hydro Power Plant Salvajina'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+        costs:
+            monetary:
+                energy_cap: 0
+                om_annual: 60
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+#####################################################################################################
+    ##############################################################################################
+############################### Large Hydro Power Plants HidroItuango ###############################
+
+    L_hydro_pp_Ituango1:
+
+     essentials:
+         color: '#2980B9'
+         name: 'Large Hydro Power Plant HidroItuango'
+         parent: supply
+         carrier_out: power
+
+     constraints:
+         energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+         resource: inf
+         lifetime: 100                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+
+     costs:
+         monetary:
+             energy_cap: 0
+             om_annual: 60
+             interest_rate: 0.10
+    #            co2:
+    ##                om_prod: 0
+    #                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+
+
+
+############################### Small Hydro Power Plants ###############################
+    S_hydro_pp:
+
+        essentials:
+            color: '#13d9a9'
+            name: 'Small Hydro Power Plant'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+#            energy_eff: 1.00         # Timeseries file contains the real energy output year 2015 Source: Field Campaign
+            lifetime: 30
+
+        costs:
+            monetary:
+                energy_cap: 4500                   # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+                om_annual: 65                      # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+                interest_rate: 0.10
+#            co2:
+##                om_prod: 0
+#                om_prod: 0.00905                   # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+############################### Fossil Fuel Power Plants ###############################
+
+    Coal_pp:
+        essentials:
+            color: '#45211e'
+            name: 'Coal Power Plant'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 0.38                      # https://www.sciencedirect.com/topics/engineering/power-generation-efficiency
+            resource: inf
+            lifetime: 30                          # https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct_FINAL.pdf
+            energy_ramping: 0.6                  # https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Sep/IRENA_Flexibility_in_CPPs_2019.pdf?la=en&hash=AF60106EA083E492638D8FA9ADF7FD099259F5A1
+            energy_cap_min_use: 0.25
+        costs:
+            monetary:
+                energy_cap: 0                     # https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct_FINAL.pdf
+                om_annual: 32.8                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_prod: 0.023                    # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_con: 0.01326                   # https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct_FINAL.pdf, Arithmetic mean of the indicated values
+#                storage_cap: 0.0038               # 5 USD tax per TON CO2
+                interest_rate: 0.10
+#            co2:
+#                om_prod: 0.760                    # https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf
+##                om_prod: 0.820                    # Life-cycle, https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf
+
+    CCGT_pp:
+        essentials:
+            color: '#db6d65'
+            name: 'Combined Cycle Gas Turbine Power Plant'
+            parent: supply
+            carrier_out: power
+            energy_cap_min_use: 0.4
+        constraints:
+            energy_eff: 0.56                      # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Geometric mean of the indicated values
+            resource: inf
+            lifetime: 30                          # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+            energy_ramping: 0.8                   # https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Sep/IRENA_Flexibility_in_CPPs_2019.pdf?la=en&hash=AF60106EA083E492638D8FA9ADF7FD099259F5A1
+
+        costs:
+            monetary:
+                energy_cap: 0                  # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Typical value
+                om_annual: 10.5                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_prod: 0.00315                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_con: 0.03095                     # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Arithmetic mean of the indicated values
+#                storage_cap: 0.00185               # 5 USD tax per TON CO2
+                interest_rate: 0.10
+#            co2:
+#                om_prod: 0.370                    # https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf
+##                om_prod: 0.490                    # Lifecycle, https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf
+
+    CCGT_Oil_pp:
+        essentials:
+            color: '#d9534a'
+            name: 'Oil fuelled combined Cycle Gas Turbine Power Plant'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 0.56                      # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Geometric mean of the indicated values
+            resource: inf
+            lifetime: 30                          # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+            energy_ramping: 0.4                   # https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Sep/IRENA_Flexibility_in_CPPs_2019.pdf?la=en&hash=AF60106EA083E492638D8FA9ADF7FD099259F5A1
+            energy_cap_min_use: 0.4
+
+        costs:
+            monetary:
+                energy_cap: 0                  # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Typical value
+                om_annual: 10.5                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_prod: 0.00315                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_con: 0.0327905                   # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Arithmetic mean of the indicated values
+#                storage_cap: 0.0036905              # 5 USD tax per TON CO2
+                interest_rate: 0.10
+#            co2:
+#                om_prod: 0.7381                   # https://www.isprambiente.gov.it/files2020/pubblicazioni/rapporti/Rapporto317_2020.pdf
+
+    OCGT_pp:
+        essentials:
+            color: '#B7950B'
+            name: 'Open Cycle Gas Turbine Power Plant'
+            parent: supply
+            carrier_out: power
+
+
+        constraints:
+            energy_eff: 0.40                      # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+            resource: inf
+            lifetime: 30                          # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+            energy_cap_min_use: 0.4
+
+        costs:
+            monetary:
+                energy_cap: 0                  # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Typical value
+                om_annual: 10.5                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_prod: 0.00315                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_con: 0.03174                    # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Arithmetic mean of the indicated values
+#                storage_cap: 0.00264              # 5 USD tax per TON CO2
+                interest_rate: 0.10
+#                co2:
+#                    om_prod: 0.528                    # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+#    #                om_prod: 0.64                     # Life-cycle https://github.com/calliope-project/uk-calliope
+
+    OCGT_Oil_pp:
+        essentials:
+            color: '#B7950B'
+            name: 'Open Cycle Gas Turbine Power Plant fuelled with Oil'
+            parent: supply
+            carrier_out: power
+        constraints:
+            energy_eff: 0.40                      # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+            resource: inf
+            lifetime: 30                          # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+            energy_cap_min_use: 0.4
+
+        costs:
+            monetary:
+                energy_cap: 0                  # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Typical value
+                om_annual: 10.5                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_prod: 0.00315                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_con: 0.0327905                     # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Arithmetic mean of the indicated values
+#                storage_cap: 0.0036905              # 5 USD tax per TON CO2
+                interest_rate: 0.10
+#                co2:
+#                    om_prod: 0.7381                   # https://www.isprambiente.gov.it/files2020/pubblicazioni/rapporti/Rapporto317_2020.pdf
+#    #                om_prod: 0.778                   # https://jscholarship.library.jhu.edu/bitstream/handle/1774.2/40170/Hoon%20Yun.pdf?sequence=1
+
+    OCGT_Diesel_pp:
+        essentials:
+            color: 'B7950B'
+            name: 'Open Cycle Gas Turbine Power Plant fuelled with Diesel fuel'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 0.4                       # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+            resource: inf
+            lifetime: 30                          # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+            energy_cap_min_use: 0.4
+
+        costs:
+            monetary:
+                energy_cap: 0                  # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Typical value
+                om_annual: 10.5                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_prod: 0.00315                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_con: 0.0327905                     # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Arithmetic mean of the indicated values
+#                storage_cap: 0.0036905              # 5 USD tax per TON CO2
+                interest_rate: 0.10
+#                co2:
+#                    om_prod: 0.7381                   # https://www.isprambiente.gov.it/files2020/pubblicazioni/rapporti/Rapporto317_2020.pdf
+#                    om_prod: 0.778                   # https://jscholarship.library.jhu.edu/bitstream/handle/1774.2/40170/Hoon%20Yun.pdf?sequence=1
+
+
+    CCGT_Diesel_pp:
+        essentials:
+            color: '#B7950B'
+            name: 'Combined Cycle Gas Turbine Power Plant fuelled with Diesel fuel'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 0.48                      # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+            resource: inf
+            lifetime: 30                          # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+            energy_cap_min_use: 0.4
+
+        costs:
+            monetary:
+                energy_cap: 0                  # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Typical value
+                om_annual: 10.5                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_prod: 0.00315                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+#                storage_cap: 0.0036905              # 5 USD tax per TON CO2
+                om_con: 0.0327905                     # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Arithmetic mean of the indicated values
+                interest_rate: 0.10
+#            co2:
+#                om_prod: 0.7381                   # https://www.isprambiente.gov.it/files2020/pubblicazioni/rapporti/Rapporto317_2020.pdf
+##                om_prod: 0.778                   # https://jscholarship.library.jhu.edu/bitstream/handle/1774.2/40170/Hoon%20Yun.pdf?sequence=1
+
+
+    Steam_Gas_pp:
+        essentials:
+            color: '#99A3A4'
+            name: 'Steam Turbine Gas Power Plant'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 0.35
+            resource: inf
+            lifetime: 50
+            energy_ramping: 0.3                   # https://www.sciencedirect.com/science/article/pii/S1364032117309206
+
+        costs:
+            monetary:
+                energy_cap: 0                  # https://doi.org/10.5281/zenodo.5242926
+                om_annual: 26.5                   # https://www.eia.gov/analysis/studies/powerplants/generationcost/pdf/full_report.pdf
+                om_prod: 0.001                    # https://www.eia.gov/analysis/studies/powerplants/generationcost/pdf/full_report.pdf
+                om_con: 0.02364                     # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Arithmetic mean of the indicated values   0.00264
+#                storage_cap: 0.00264            # 5 USD tax per TON CO2
+                interest_rate: 0.10
+#            co2:
+#                om_prod: 0.528                    # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+##                om_prod: 0.64                     # Life-cycle https://github.com/calliope-project/uk-calliope
+
+    Diesel_Engine:
+        essentials:
+            color: '#bf2d22'
+            name: 'Diesel Engine'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 0.35                      # https://doi.org/10.5281/zenodo.5242926
+            resource: inf
+            lifetime: 30                          # https://doi.org/10.5281/zenodo.5242926
+
+        costs:
+            monetary:
+
+                energy_cap: 0                   # https://doi.org/10.5281/zenodo.5242926
+                om_annual: 24                     # https://doi.org/10.5281/zenodo.5242926
+                om_prod: 0.003                    # https://doi.org/10.5281/zenodo.5242926
+                om_con:  0.052557                   # https://doi.org/10.5281/zenodo.5242926
+#                storage_cap: 0.003257           # 5 USD tax per TON CO2
+                interest_rate: 0.10
+#            co2:
+#                om_prod: 0.6514                   # https://www.isprambiente.gov.it/files2020/pubblicazioni/rapporti/Rapporto317_2020.pdf
+##                om_prod: 0.778                    # Life-cycle, https://jscholarship.library.jhu.edu/bitstream/handle/1774.2/40170/Hoon%20Yun.pdf?sequence=1
+
+    Gas_Engine:
+        essentials:
+            color: '#7a332d'
+            name: 'Gas Engine'
+            parent: supply
+            carrier_out: power
+
+        constraints:
+            energy_eff: 0.40                      # https://doi.org/10.5281/zenodo.5242926
+            resource: inf
+            lifetime: 30                          # https://doi.org/10.5281/zenodo.5242926
+            energy_cap_min_use: 0.4
+
+        costs:
+            monetary:
+                energy_cap: 0                   # https://doi.org/10.5281/zenodo.5242926
+                om_annual: 24                     # https://doi.org/10.5281/zenodo.5242926
+                om_prod: 0.0024                   # https://doi.org/10.5281/zenodo.5242926
+                om_con: 0.0137225                   # https://doi.org/10.5281/zenodo.5242926
+#                storage_cap: 0.0028225           # 5 USD tax per TON CO2
+                interest_rate: 0.10
+#            co2:
+#                om_prod: 0.5645                    # https://www.isprambiente.gov.it/files2020/pubblicazioni/rapporti/Rapporto317_2020.pdf
+##                om_prod: 0.778                    # Life-cycle, Conservative assumption.
+
+
+################################ Photovoltaic Power Plant ###############################
+
+    # pv farm
+    pv_large_scale:
+        essentials:
+            name: 'Photovoltaic power farm-scale'
+            color: '#F9FF2C'
+            parent: supply
+            carrier_out: power
+        constraints:
+            # force_resource: True
+            resource_unit: energy_per_cap
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.10
+                energy_cap: 0  # €/kW
+                om_prod: 0  # €/kWh
+                om_annual: 19 # €/kW/year
+#            nos_score:
+#                interest_rate: 1
+#                energy_cap: 0
+    # pv farm-end
+
+    pv_rooftop:
+        essentials:
+            name: 'Photovoltaic power distributed'
+            color: '#CCFF2C'
+            parent: supply
+            carrier_out: power
+        constraints:
+            # force_resource: True
+            resource_unit: energy_per_cap
+            lifetime: 20
+        costs:
+            monetary:
+                interest_rate: 0.10
+                energy_cap: 0  # €/kW
+                om_prod: 0  # €/kWh
+                om_annual: 27 # €/kW/year
+#            nos_score:
+#                interest_rate: 1
+#                energy_cap: 0
+
+
+############################## Onshore Wind Power Plant ##############################
+    on_wind_pp:
+        essentials:
+            name: 'On-shore wind power'
+            color: '#47D154'
+            parent: supply
+            carrier_out: power
+        constraints:
+            # force_resource: True
+            resource_unit: energy_per_cap
+            lifetime: 20
+        costs:
+            monetary:
+                interest_rate: 0.10
+                energy_cap: 0  # €/kW
+                om_prod: 0  # €/kWh
+                om_annual: 38 # €/kW/year
+#            nos_score:
+#                interest_rate: 1
+#                energy_cap: 0
+
+############################## Biomass ##############################
+
+
+
+    # biomass wood
+    bio_pp:
+        essentials:
+            name: 'Solid biomass power plant'
+            color: '#0E5801'
+            parent: supply
+            carrier_out: power
+        constraints:
+            resource: inf
+            energy_eff: 0.2263
+            energy_cap_min_use: 0.3
+            lifetime: 15
+        costs:
+            monetary:
+                interest_rate: 0.10
+                energy_cap: 0  # €/kW
+                om_prod: 0.0118  # €/kWh
+                om_annual: 59 # €/kW/year
+                om_con: 0.150665 # €/kWh
+#                storage_cap: 0.000665         # 5 USD tax per TON CO2
+#            co2:
+#                om_prod: 0.133 # kgCO2/kWh, source: ISPRA 2018
+#            nos_score:
+#                interest_rate: 1
+#                energy_cap: 0
+    # biomass wood-end
+
+
+##################################################################################################################################################################################################################
+    ################################################################################################## NEW TECHNOLOGIES ###############################################################################
+##################################################################################################################################################################################################################
+
+#    L_hydro_pp_NEW:
+#
+#        essentials:
+#            color: '#2980B9'
+#            name: 'Large Hydro Power Plant NEW'
+#            parent: supply
+#            carrier_out: power
+#
+#        constraints:
+##            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+##            resource: inf
+#            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php
+#
+#        costs:
+#            monetary:
+#                energy_cap: 2574                   # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf, Arithmetic mean of the indicated values
+#                om_annual: 64.41                      # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf, Arithmetic mean of the indicated values
+#                interest_rate: 0.10
+##            co2:
+##                om_prod: 0.1265                    # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+
+#    S_hydro_pp_NEW:
+#        essentials:
+#            color: '#13d9a9'
+#            name: 'Small Hydro Power Plant NEW'
+#            parent: supply
+#            carrier_out: power
+#
+#        constraints:
+##            energy_eff: 1.00         # Timeseries file contains the real energy output year 2015 Source: Field Campaign
+#            lifetime: 30
+#
+#        costs:
+#            monetary:
+#                energy_cap: 4500                   # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+#                om_annual: 65                      # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+#                interest_rate: 0.10
+##            co2:
+##                om_prod: 0
+##                om_prod: 0.00905                   # Life-cycle, https://impactful.ninja/the-carbon-footprint-of-hydropower/
+
+
+    CCGT_pp_NEW:
+        essentials:
+            color: '#db6d65'
+            name: 'Combined Cycle Gas Turbine Power Plant NEW'
+            parent: supply
+            carrier_out: power
+            energy_cap_min_use: 0.2
+        constraints:
+            energy_eff: 0.56                      # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Geometric mean of the indicated values
+#            resource: inf
+            lifetime: 30                          # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+            energy_ramping: 0.4                   # https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Sep/IRENA_Flexibility_in_CPPs_2019.pdf?la=en&hash=AF60106EA083E492638D8FA9ADF7FD099259F5A1
+
+        costs:
+            monetary:
+                energy_cap: 1418                  # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Typical value
+                om_annual: 26.97                  # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_prod: 0.0025                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_con: 0.02285                      # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Arithmetic mean of the indicated values
+#                storage_cap: 0.00185               # 5 USD tax per TON CO2
+                interest_rate: 0.10
+
+#            co2:
+#                om_prod: 0.370                    # https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf
+#                om_prod: 0.490                    # Lifecycle, https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf
+
+#    Gas_Engine_NEW:
+#        essentials:
+#            color: '#7a332d'
+#            name: 'Gas Engine NEW'
+#            parent: supply
+#            carrier_out: power
+#
+#        constraints:
+#            energy_eff: 0.40                      # https://doi.org/10.5281/zenodo.5242926
+#            resource: inf
+#            lifetime: 30                          # https://doi.org/10.5281/zenodo.5242926
+#            energy_cap_min_use: 0.4
+#
+#        costs:
+#            monetary:
+#                energy_cap: 950                   # https://www.sciencedirect.com/science/article/pii/S030626192101179X
+#                om_annual: 25                    # https://doi.org/10.5281/zenodo.5242926
+#                om_prod: 0.0024                   # https://doi.org/10.5281/zenodo.5242926
+#                om_con: 0.0109                    # https://doi.org/10.5281/zenodo.5242926
+#                interest_rate: 0.10
+##            co2:
+##                om_prod: 0.5645                    # https://www.isprambiente.gov.it/files2020/pubblicazioni/rapporti/Rapporto317_2020.pdf
+##                om_prod: 0.778                    # Life-cycle, Conservative assumption.
+#
+
+#    Coal_pp_NEW:
+#        essentials:
+#            color: '#45211e'
+#            name: 'Coal Power Plant NEW'
+#            parent: supply
+#            carrier_out: power
+#
+#        constraints:
+#            energy_eff: 0.41                      # https://www.sciencedirect.com/topics/engineering/power-generation-efficiency
+#            lifetime: 30                          # https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct_FINAL.pdf
+#            energy_ramping: 0.15                  # https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Sep/IRENA_Flexibility_in_CPPs_2019.pdf?la=en&hash=AF60106EA083E492638D8FA9ADF7FD099259F5A1
+#            energy_cap_min_use: 0.25
+#        costs:
+#            monetary:
+#                energy_cap: 3382                 # https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct_FINAL.pdf
+#                om_annual: 105                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+#                om_prod: 0.0043                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+#                om_con: 0.0082                    # https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct_FINAL.pdf, Arithmetic mean of the indicated values
+#                interest_rate: 0.10
+##            co2:
+##                om_prod: 0.760                    # https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf
+##                om_prod: 0.820                    # Life-cycle, https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf
+
+
+    # waste-to-energy
+#    wte_pp_new:
+#        essentials:
+#            name: 'Waste-to-energy plant'
+#            color: '#6A0241'
+#            parent: supply
+#            carrier_out: power
+#        constraints:
+#            resource: inf
+#            energy_eff: 0.28
+#            lifetime: 20
+#        costs:
+#            monetary:
+#                interest_rate: 0.10
+#                energy_cap: 0  # €/kW
+#                om_prod: 0.03305  # €/kWh
+#                om_annual: 677.5 # €/kW/year
+#                om_con: -0.1305 # €/kWh, ricavi per smaltimento rifiuti
+##            co2:
+##                om_prod: 0.555 # kgCO2/kWh, source: ISPRA 2018
+#            nos_score:
+#                interest_rate: 1
+#                energy_cap: 0
+    # waste-to-energy-end
+
+
+
+    # wind-off-shore
+    off_wind_pp_new:
+        essentials:
+            name: 'New off-shore wind power'
+            color: '#47D154'
+            parent: supply
+            carrier_out: power
+        constraints:
+#            # force_resource: True
+            resource_unit: energy_per_cap
+            lifetime: 30
+            energy_cap_min: 0
+        costs:
+            monetary:
+                interest_rate: 0.10
+                energy_cap: 2481  # €/kW
+                om_prod: 0  # €/kWh
+                om_annual: 27 # €/kW/year
+#            nos_score:
+#                interest_rate: 1
+#                energy_cap: 0
+#            excl_score:
+#                interest_rate: 1
+#                energy_cap: 0
+#    # wind-end
+
+
+    # wind
+    on_wind_pp_new:
+        essentials:
+            name: 'New on-shore wind power'
+            color: '#47D154'
+            parent: supply
+            carrier_out: power
+        constraints:
+#            # force_resource: True
+            resource_unit: energy_per_cap
+            lifetime: 25
+            energy_cap_min: 0
+        costs:
+            monetary:
+                interest_rate: 0.10
+                energy_cap: 1306  # €/kW
+                om_prod: 0  # €/kWh
+                om_annual: 28 # €/kW/year
+#            nos_score:
+#                interest_rate: 1
+#                energy_cap: 0
+#            excl_score:
+#                interest_rate: 1
+#                energy_cap: 0
+    # wind-end
+
+    # pv farm
+    pv_large_scale_new:
+        essentials:
+            name: 'New photovoltaic power farm-scale'
+            color: '#F9FF2C'
+            parent: supply
+            carrier_out: power
+        constraints:
+#            # force_resource: True
+            resource_unit: energy_per_cap
+            lifetime: 30
+            energy_cap_min: 0
+#            energy_cap_max_systemwide: inf
+        costs:
+            monetary:
+                interest_rate: 0.10
+                energy_cap: 677  # €/kW
+#                storage_cap: PRecio
+
+                om_prod: 0  # €/kWh
+                om_annual: 15 # €/kW/year
+#            nos_score:
+#                interest_rate: 1
+#                energy_cap: 0
+#            excl_score:
+#                interest_rate: 1
+#                energy_cap: 0
+    # pv farm-end
+
+    # pv farm
+    pv_large_scale_Storage_new:
+        essentials:
+            name: 'New photovoltaic power farm-scale'
+            color: '#F9FF2C'
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+#            # force_resource: True
+            resource_unit: energy_per_cap
+            lifetime: 30
+            energy_cap_min: 0
+#            energy_cap_max_systemwide: inf
+        costs:
+            monetary:
+                interest_rate: 0.10
+                energy_cap: 677  # €/kW
+                storage_cap: 433
+
+                om_prod: 0  # €/kWh
+                om_annual: 15 # €/kW/year
+#            nos_score:
+#                interest_rate: 1
+#                energy_cap: 0
+#            excl_score:
+#                interest_rate: 1
+#                energy_cap: 0
+    # pv farm-end
+
+
+
+    # pv rooftop
+    pv_rooftop_new:
+        essentials:
+            name: 'New Photovoltaic power distributed'
+            color: '#CCFF2C'
+            parent: supply
+            carrier_out: power
+        constraints:
+#            # force_resource: True
+            resource_unit: energy_per_cap
+            lifetime: 26
+            energy_cap_min: 0
+            energy_cap_max_systemwide: inf
+        costs:
+            monetary:
+                interest_rate: 0.10
+                energy_cap: 871  # €/kW
+                om_prod: 0  # €/kWh
+                om_annual: 20 # €/kW/year
+#            nos_score:
+#                interest_rate: 1
+#                energy_cap: 0
+#            excl_score:
+#                interest_rate: 1
+#                energy_cap: 0
+    # pv rooftop-end
+    # battery storage
+#    battery:
+#        essentials:
+#            color: '#177202'
+#            name: 'Battery energy storage'
+#            parent: storage
+#            carrier: power
+#        constraints:
+#            energy_cap_per_storage_cap_max: 0.25  # {own_assumptions}
+#            energy_eff: 0.98  # 0.98*0.98 = 0.96 round-trip eff {IRENA2017}
+#            storage_cap_max: inf
+#            lifetime: 15  # {Brown et al. , Energy, 2018}
+#            # force_asynchronous_prod_con: True
+#        costs:
+#            monetary:
+#                interest_rate: 0.1
+#                storage_cap: 433  # {IRENA2017 and O. Schmidt, A. Hawkes, A. Gambhir and I. Staffell, Nature En. 2017}
+#                om_annual: 7.22  # converted from Calliope-UK
+#                om_prod: 0.0022  # converted from Calliope-UK
+#        depreciation:
+#            plant_life: 15  # {own_assumptions}
+##            nos_score:
+##                interest_rate: 1
+##                energy_cap: 0
+##            excl_score:
+##                interest_rate: 1
+##                energy_cap: 0
+#    # battery storage-end
+#    # biogas new
+#    biogas_new:
+#        essentials:
+#            name: 'New biogas power plant'
+#            color: '#5AA24D'
+#            parent: supply
+#            carrier_out: power
+#        constraints:
+#            resource: inf
+#            energy_eff: 0.39
+#            lifetime: 20
+#            energy_cap_max_systemwide: 4e6 # 4 GW
+#            energy_cap_min: 0
+#        costs:
+#            monetary:
+#                interest_rate: 0.10
+#                energy_cap: 1810   # €/kW        https://www.sciencedirect.com/science/article/pii/S030626192101179X#b0320
+#                om_annual: 184 # €/kW/year
+#                om_con: 0.04 # €/kWh
+#            co2:
+#                om_prod: 0.133 #kgCO2/kWh, source: ISPRA 2018
+#            nos_score:
+#                interest_rate: 1
+#                energy_cap: 0
+#            excl_score:
+#                interest_rate: 1
+#                energy_cap: 0
+    # biogas new-end
+
+
+
+
+# Consuming Technologies #
+
+#################################### Electricity ####################################
+    demand_power:
+    
+        essentials:
+            name: 'Power demand'
+            color: '#000000'
+            parent: demand
+            carrier: power
+            
+
+                
+

@@ -1,0 +1,676 @@
+
+# Location Definition #
+
+# In this model, kenya is divided into 18 different regions which are:
+
+
+        #1	SubAntioquia
+        #2	SubArauca
+        #3	SubAtlantico
+        #4	SubBogota
+        #5	SubBolivar
+        #6	SubBoyaca-Casanare
+        #7	SubCaqueta
+        #8	SubCauca-Narinno
+        #9	SubCerromatoso
+        #10	SubCordoba-Sucre
+        #11	SubCQR
+        #12	SubGCM
+        #13	SubHuila-Tolima
+        #14	SubMeta
+        #15	SubNorteSantander
+        #16	SubPutumayo
+        #17	SubSantander
+        #18	SubValle
+
+
+# Parameters:
+
+    # lat: Latitude of the location
+    # lon: Longtitude of the location 
+    # energy_cap_equals: Real Capacity [kW]
+
+# Defining the locations 
+
+locations:
+
+################################### SubAntioquia ##################################
+    SubAntioquia:
+
+        coordinates:
+            lat: 6.23
+            lon: -75.59
+        
+        # Available Technologies
+        techs:
+            L_hydro_pp_Guatape:
+                constraints:
+                    energy_cap_equals: 560000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:PENOL
+                    resource_unit: energy_per_cap
+
+            L_hydro_pp_Playas:
+                constraints:
+                    energy_cap_equals: 207000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:PLAYAS
+                    resource_unit: energy_per_cap
+
+
+            L_hydro_pp_PorceII:
+                constraints:
+                    energy_cap_equals: 405000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:PORCEII
+                    resource_unit: energy_per_cap
+
+
+            L_hydro_pp_PorceIII:
+                constraints:
+                    energy_cap_equals: 700000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:PORCEIII
+                    resource_unit: energy_per_cap
+
+
+            L_hydro_pp_SanCarlos:
+                constraints:
+                    energy_cap_equals: 1240000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:PUNCHINA
+                    resource_unit: energy_per_cap
+
+
+
+            L_hydro_pp_LaTasajera:
+                constraints:
+                    energy_cap_equals: 306000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:RIOGRANDE2
+                    resource_unit: energy_per_cap
+
+
+            L_hydro_pp_Jaguas:
+                constraints:
+                    energy_cap_equals: 107000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:SANLORENZO
+                    resource_unit: energy_per_cap
+
+            L_hydro_pp_Guatron:
+                constraints:
+                    energy_cap_equals: 512000
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:MIRAFLORES
+                    resource_unit: energy_per_cap
+
+            L_hydro_pp_Guatron2:
+                constraints:
+                    energy_cap_equals: 185000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:TRONERAS
+                    resource_unit: energy_per_cap
+
+            S_hydro_pp:
+                constraints:
+                    energy_cap_equals: 470980
+                    resource: file=Organized_Sistema_PorcVoluUtilDiar2022.csv:region1
+
+                    resource_unit: energy_per_cap
+                      
+
+            CCGT_pp:  #REVISAR BIEN
+                constraints:
+                    energy_cap_equals: 353000
+                   
+
+#            CCGT_pp: #BIOGAS
+#                constraints:
+#                    energy_cap_equals: 5000
+              
+                          
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubAntioquia
+                    
+################################### SubArauca ##################################
+    SubArauca:
+    
+        coordinates:
+            lat: 7.08
+            lon: -70.76
+ 
+        techs:
+            CCGT_pp:
+                constraints:
+                    energy_cap_equals: 14900
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubArauca
+                    
+################################### SubAtlantico ##################################
+    SubAtlantico:
+    
+        coordinates:
+            lat: 10.75
+            lon: -75
+         
+        # Available Technologies              
+        techs:
+
+            CCGT_pp:
+                constraints:
+                    energy_cap_equals: 1396000
+
+#            CCGT_pp:
+#                constraints:
+#                    energy_cap_equals: 120000
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubAtlantico
+                    
+################################### SubBogota ##################################
+    SubBogota:
+ 
+        coordinates:
+            lat: 4.31
+            lon: -74.18
+
+        # Available Technologies              
+        techs:
+
+            L_hydro_pp_Pagua:
+                constraints:
+                    energy_cap_equals: 600000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:AGREGADOBOGOTA
+                    resource_unit: energy_per_cap
+
+            L_hydro_pp_Guavio:
+                constraints:
+                    energy_cap_equals: 1250000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:GUAVIO
+                    resource_unit: energy_per_cap
+
+
+            L_hydro_pp_General:
+                constraints:
+                    energy_cap_equals: 185000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Sistema_PorcVoluUtilDiar2022.csv:region1
+                    resource_unit: energy_per_cap
+
+            S_hydro_pp:
+                constraints:
+                    energy_cap_equals: 170500
+                    resource: file=Organized_Sistema_PorcVoluUtilDiar2022.csv:region1
+                    resource_unit: energy_per_cap
+
+            Coal_pp:
+                constraints:
+                    energy_cap_equals: 226000
+
+            CCGT_pp:  #BIOGAS
+                constraints:
+                    energy_cap_equals: 4140
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubBogota
+
+################################### SubBolivar ##################################
+    SubBolivar:
+
+        coordinates:
+            lat: 10.39972
+            lon: -75.51444
+
+        # Available Technologies
+        techs:
+
+            pv_large_scale:
+                constraints:
+                    energy_cap_equals: 20960
+                    resource: file=RadiacionEficiencia.csv:SubBolivar
+                    resource_unit: energy_per_cap
+
+            CCGT_pp:
+                constraints:
+                    energy_cap_equals: 429900
+
+#            CCGT_pp:
+#                constraints:
+#                    energy_cap_equals: 180000
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubBolivar
+
+################################### SubBoyaca-Casanare ##################################
+    SubBoyaca-Casanare:
+
+        coordinates:
+            lat: 5.67
+            lon: -73
+
+        # Available Technologies
+        techs:
+
+            L_hydro_pp_Chivor:
+                constraints:
+                    energy_cap_equals: 1000000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:ESMERALDA
+                    resource_unit: energy_per_cap
+
+            S_hydro_pp:
+                constraints:
+                    energy_cap_equals: 20900
+                    resource: file=Organized_Sistema_PorcVoluUtilDiar2022.csv:region1
+                    resource_unit: energy_per_cap
+
+            CCGT_pp:
+                constraints:
+                    energy_cap_equals: 253600
+
+            Coal_pp:
+                constraints:
+                    energy_cap_equals: 343000
+
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 19000
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubBoyaca-Casanare
+
+################################### SubCaqueta ##################################
+    SubCaqueta:
+
+        coordinates:
+            lat: 0.75
+            lon: -74
+
+        # Available Technologies
+        techs:
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubCaqueta
+
+################################### SubCauca-Narinno ##################################
+    SubCauca-Narinno:
+
+        coordinates:
+            lat: 2.5
+            lon: -76.83
+
+        # Available Technologies
+        techs:
+            L_hydro_pp_Salvajina:
+                constraints:
+                    energy_cap_equals: 315000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:SALVAJINA
+                    resource_unit: energy_per_cap
+
+            S_hydro_pp:
+                constraints:
+                    energy_cap_equals: 60620
+                    resource: file=Organized_Sistema_PorcVoluUtilDiar2022.csv:region1
+                    resource_unit: energy_per_cap
+
+            pv_large_scale:
+                constraints:
+                    energy_cap_equals: 300
+                    resource: file=RadiacionEficiencia.csv:SubCauca-Narinno
+                    resource_unit: energy_per_cap
+
+            Coal_pp:
+                constraints:
+                    energy_cap_equals: 17000
+
+            bio_pp:
+                constraints:
+                    energy_cap_equals: 80900
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubCauca-Narinno
+
+################################### SubCerromatoso ##################################
+    SubCerromatoso:
+
+        coordinates:
+            lat: 7.92
+            lon: -75.55
+
+        # Available Technologies
+        techs:
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubCerromatoso
+
+################################### SubCordoba-Sucre ##################################
+    SubCordoba-Sucre:
+
+        coordinates:
+            lat: 8.33
+            lon: -75.67
+
+        # Available Technologies
+        techs:
+            L_hydro_pp_Urra:
+                constraints:
+                    energy_cap_equals: 338000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:URRA1
+                    resource_unit: energy_per_cap
+
+            pv_large_scale:
+                constraints:
+                    energy_cap_equals: 48300
+                    resource: file=RadiacionEficiencia.csv:SubCordoba-Sucre
+                    resource_unit: energy_per_cap
+
+            CCGT_pp:
+                constraints:
+                    energy_cap_equals: 200000
+
+            Coal_pp:
+                constraints:
+                    energy_cap_equals: 437000
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubCordoba-Sucre
+
+################################### SubCQR ##################################
+    SubCQR:
+
+        coordinates:
+            lat: 4.5
+            lon: -75.67
+
+        # Available Technologies
+        techs:
+
+            L_hydro_pp_General:
+                constraints:
+                    energy_cap_equals: 165000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Sistema_PorcVoluUtilDiar2022.csv:region1
+                    resource_unit: energy_per_cap
+
+            L_hydro_pp_Miel:
+                constraints:
+                    energy_cap_equals: 396000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:AMANI
+                    resource_unit: energy_per_cap
+
+            S_hydro_pp:
+                constraints:
+                    energy_cap_equals: 79630
+                    resource: file=Organized_Sistema_PorcVoluUtilDiar2022.csv:region1
+                    resource_unit: energy_per_cap
+
+            pv_large_scale:
+                constraints:
+                    energy_cap_equals: 5060
+                    resource: file=RadiacionEficiencia.csv:SubCQR
+                    resource_unit: energy_per_cap
+
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 51000
+
+            bio_pp:
+                constraints:
+                    energy_cap_equals: 19900
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubCQR
+
+################################### SubGCM ##################################
+    SubGCM:
+
+        coordinates:
+            lat: 10
+            lon: -74.5
+
+        # Available Technologies
+        techs:
+            CCGT_pp:
+                constraints:
+                    energy_cap_equals: 88000
+
+            Coal_pp:
+                constraints:
+                    energy_cap_equals: 296000
+
+#            CCGT_pp:
+#                constraints:
+#                    energy_cap_equals: 2250
+
+            on_wind_pp:
+                constraints:
+                    energy_cap_equals: 18000
+                    resource: file=Wind.csv:SubGCM
+                    resource_unit: energy_per_cap
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubGCM
+
+################################### SubHuila-Tolima ##################################
+    SubHuila-Tolima:
+
+        coordinates:
+            lat: 4
+            lon: -75.25
+
+        # Available Technologies
+        techs:
+            L_hydro_pp_Betania:
+                constraints:
+                    energy_cap_equals: 540000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:BETANIA
+                    resource_unit: energy_per_cap
+
+            L_hydro_pp_ElQuimbo:
+                constraints:
+                    energy_cap_equals: 400000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:ELQUIMBO
+                    resource_unit: energy_per_cap
+
+            L_hydro_pp_Prado:
+                constraints:
+                    energy_cap_equals: 51000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:PRADO
+                    resource_unit: energy_per_cap
+
+            L_hydro_pp_General:
+                constraints:
+                    energy_cap_equals: 138000 # increased to ensure no unmet_demand in first timestep
+                    resource: file=Organized_Sistema_PorcVoluUtilDiar2022.csv:region1
+                    resource_unit: energy_per_cap
+
+            S_hydro_pp:
+                constraints:
+                    energy_cap_equals: 25270
+                    resource: file=Organized_Sistema_PorcVoluUtilDiar2022.csv:region1
+                    resource_unit: energy_per_cap
+
+            CCGT_pp:
+                constraints:
+                    energy_cap_equals: 7250
+
+            pv_large_scale:
+                constraints:
+                    energy_cap_equals: 5060
+                    resource: file=RadiacionEficiencia.csv:SubHuila-Tolima
+                    resource_unit: energy_per_cap
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubHuila-Tolima
+
+################################### SubMeta ##################################
+    SubMeta:
+
+        coordinates:
+            lat: 3.5
+            lon: -73
+
+        # Available Technologies
+        techs:
+            CCGT_pp:   #BIOGAS
+                constraints:
+                    energy_cap_equals: 2100
+
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 19900
+
+            pv_large_scale:
+                constraints:
+                    energy_cap_equals: 107400
+                    resource: file=RadiacionEficiencia.csv:SubMeta
+                    resource_unit: energy_per_cap
+
+            bio_pp:
+                constraints:
+                    energy_cap_equals: 19900
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubMeta
+
+################################### SubNorteSantander ##################################
+    SubNorteSantander:
+
+        coordinates:
+            lat: 8
+            lon: -73
+
+        # Available Technologies
+        techs:
+
+            Coal_pp:
+                constraints:
+                    energy_cap_equals: 335000
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubNorteSantander
+
+################################### SubPutumayo ##################################
+    SubPutumayo:
+
+        coordinates:
+            lat: 0.5
+            lon: -76
+
+        # Available Technologies
+        techs:
+
+            CCGT_pp:
+                constraints:
+                    energy_cap_equals: 1000
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubPutumayo
+
+################################### SubSantander ##################################
+    SubSantander:
+
+        coordinates:
+            lat: 6.83
+            lon: -73.42
+
+        # Available Technologies
+        techs:
+
+            L_hydro_pp_Sogamosos:
+                constraints:
+                    energy_cap_equals: 819000
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:TOPOCORO
+                    resource_unit: energy_per_cap
+
+            S_hydro_pp:
+                constraints:
+                    energy_cap_equals: 22200
+                    resource: file=Organized_Sistema_PorcVoluUtilDiar2022.csv:region1
+                    resource_unit: energy_per_cap
+
+            CCGT_pp:
+                constraints:
+                    energy_cap_equals: 272000
+
+#            CCGT_pp:
+#                constraints:
+#                    energy_cap_equals: 181000
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubSantander
+
+################################### SubValle ##################################
+    SubValle:
+
+        coordinates:
+            lat: 3.75
+            lon: -76.5
+
+        # Available Technologies
+        techs:
+            L_hydro_pp_Alban:
+                constraints:
+                    energy_cap_equals: 427000
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:ALTOANCHICAYA
+                    resource_unit: energy_per_cap
+
+            L_hydro_pp_Calima:
+                constraints:
+                    energy_cap_equals: 132000
+                    resource: file=Organized_Embalses_PorcVoluUtilDiar2022.csv:CALIMA1
+                    resource_unit: energy_per_cap
+
+            S_hydro_pp:
+                constraints:
+                    energy_cap_equals: 82340
+                    resource: file=Organized_Sistema_PorcVoluUtilDiar2022.csv:region1
+                    resource_unit: energy_per_cap
+
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 470000
+
+            Coal_pp:
+                constraints:
+                    energy_cap_equals: 9900
+
+            pv_large_scale:
+                constraints:
+                    energy_cap_equals: 37040
+                    resource: file=RadiacionEficiencia.csv:SubValle
+                    resource_unit: energy_per_cap
+
+            bio_pp:
+                constraints:
+                    energy_cap_equals: 75590
+
+            demand_power:
+                constraints:
+                    resource: file=Demand2022.csv:SubValle
+
+
+#    Export:
+#
+#        coordinates:
+#            lat: -0.1838427289903136
+#            lon: -78.45597243926304
+#
+#        # Available Technologies
+#        techs:
+#
+#            Imports:
+#                constraints:
+#                    energy_cap_equals:
+#                    resource: file=Imports.csv:Imports
+#                    resource_unit: energy_per_cap
+#
+#            demand_power:
+#                constraints:
+#                    resource: file=Demand2022.csv:Exports
